@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class ChatItemWidget extends StatelessWidget {
-  var index;
+  final index;
 
   ChatItemWidget(this.index);
 
