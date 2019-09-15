@@ -12,7 +12,11 @@ void main(){
   );
   testWidgets('ChatAppBar UI Test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(app);
+    await tester.pumpWidget(MaterialApp(
+      home: Scaffold(
+          body:  ChatAppBar()
+      ),
+    ));
 
     expect(find.text('Aditya Gurjar'), findsOneWidget);
     expect(find.text('@adityagurjar'), findsOneWidget);
